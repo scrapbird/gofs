@@ -3,4 +3,10 @@ gofs
 
 Simple web server I use when I need to download files onto something quickly
 
-Just create a directory in the same folder as the script named 'public' and it will serve files out of there
+Navigate to the directory you wan't to be the root of your web server and execute gofs.
+
+The default port that gofs will listen on is 8888 but you can specify a different host string as a single parameter. In any of the following formats:
+	host:port
+	:port
+	port
+
