@@ -11,5 +11,3 @@ The default port that gofs will listen on is 8888 but you can specify a differen
 
 	:port
 
-	port
-

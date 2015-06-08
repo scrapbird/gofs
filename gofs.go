@@ -4,7 +4,6 @@ import (
 	"os"
 	"net/http"
 	"fmt"
-	"strconv"
 )
 
 const (
@@ -19,13 +18,6 @@ func main() {
 	}
 	if len(os.Args) > 1 {
 		addr = os.Args[1]
-		// check address format
-		c := string([]rune(addr)[0])
-		if _, err := strconv.Atoi(c); err == nil {
-			if c != ":" {
-				addr = ":" + addr
-			}
-		}
 	} else {
 		addr = defaultAddr
 	}
